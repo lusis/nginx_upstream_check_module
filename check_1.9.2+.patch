@@ -281,7 +281,7 @@ index 605eea7..44581e0 100644
 +			peer->check_index);
 +
 +	if (ngx_http_upstream_check_peer_down(peer->check_index)) {
-+		goto next;
++		continue;
 +	}
 +#endif
 +
